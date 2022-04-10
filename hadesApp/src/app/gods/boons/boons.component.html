@@ -1,0 +1,6 @@
+<div *ngIf="god">
+    <p>{{god.description}}</p>
+    <img src="{{god.imagePath}}" alt="{{god.name}}" style="max-height: 250px; max-width: 500px;">
+    <div>Boons List for {{god.name}}</div>
+    <div *ngFor="let boon of god.boon">{{boon.boonName}} {{boon.boonDescription}}</div>
+</div>

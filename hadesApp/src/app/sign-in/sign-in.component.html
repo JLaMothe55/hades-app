@@ -1,0 +1,12 @@
+<p>sign-in works!</p>
+
+<form [formGroup]="submissionForm" (ngSubmit)="onSubmit()">
+    <label for="email">Email:</label>
+    <input type="email" id="email" formControlName="email"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" formControlName="password"><br><br>
+
+    <button type="submit">Submit</button>
+
+</form>

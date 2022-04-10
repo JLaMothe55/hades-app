@@ -1,0 +1,8 @@
+<div>Select a god to see their boons</div>
+<div *ngFor="let god of gods" (click)="selectGod(this.god)">
+    <a>{{god.name}}</a>
+</div>
+
+
+
+
